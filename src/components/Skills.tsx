@@ -55,11 +55,11 @@ const Skills = () => {
       icon: Code,
       title: 'Machine Learning',
       skills: [
-        { name: 'Python ML', level: 75 },
-        { name: 'TensorFlow', level: 65 },
-        { name: 'Scikit-learn', level: 70 },
-        { name: 'Data Analysis', level: 78 },
-        { name: 'Pandas', level: 80 }
+        { name: 'Python ML', level: 1 },
+        { name: 'TensorFlow', level: 1 },
+        { name: 'Scikit-learn', level: 1 },
+        { name: 'Data Analysis', level: 1 },
+        { name: 'Pandas', level: 1 }
       ],
       gradient: 'from-orange-500 to-red-500'
     },
@@ -67,11 +67,11 @@ const Skills = () => {
       icon: Globe,
       title: 'Other Technologies',
       skills: [
-        { name: 'Linux', level: 75 },
-        { name: 'Docker', level: 60 },
-        { name: 'AWS Basics', level: 55 },
-        { name: 'API Development', level: 78 },
-        { name: 'Problem Solving', level: 90 }
+        { name: 'Linux', level: 1 },
+        { name: 'Docker', level: 1 },
+        { name: 'AWS Basics', level: 1 },
+        { name: 'API Development', level: 1 },
+        { name: 'Problem Solving', level: 1 }
       ],
       gradient: 'from-violet-500 to-purple-500'
     }

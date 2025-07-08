@@ -31,7 +31,7 @@ const Header = () => {
           <div className="relative group">
             <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
             <div className="relative text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
-              <span className="drop-shadow-lg">Tez Aryan</span>
+              
             </div>
           </div>
           

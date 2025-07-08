@@ -4,40 +4,40 @@ import { ExternalLink, Github, ArrowRight, Sparkles, Clock, CheckCircle } from '
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Website',
-      description: 'A full-featured e-commerce platform with user authentication, product catalog, shopping cart, and secure payment integration.',
+      title: 'Tutorite',
+      description: 'Developed a student-teacher interaction and study platform with video calling, live class sessions, and academic content management. ',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
+      tech: [],
       github: 'https://github.com',
       demo: 'https://example.com',
       gradient: 'from-pink-500 to-rose-500',
       status: 'completed'
     },
     {
-      title: 'Student Management System',
-      description: 'A comprehensive system for managing student records, course enrollment, grades, and academic information with role-based access.',
+      title: 'Job Seeker Website',
+      description: 'Created a web app for students to find jobs and internships with dual user modes (Student & Recruiter) and dynamic opportunity listings.',
       image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['Java', 'Swing', 'MySQL', 'JDBC'],
+      tech: [],
       github: 'https://github.com',
       demo: 'https://example.com',
       gradient: 'from-purple-500 to-indigo-500',
       status: 'completed'
     },
     {
-      title: 'Library Management System',
-      description: 'A desktop application for managing library operations including book inventory, member management, and lending/return processes.',
+      title: ' AI Finance App ',
+      description: 'Building a smart finance app that uses AI models for spending analysis, budgeting suggestions, and personalized financial planning. .',
       image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['Java', 'Swing', 'MySQL', 'Database Design'],
+      tech: [],
       github: 'https://github.com',
       demo: 'https://example.com',
       gradient: 'from-cyan-500 to-blue-500',
-      status: 'completed'
+      status: 'ongoing'
     },
     {
-      title: 'Machine Learning Projects',
-      description: 'Collection of ML projects including data analysis, predictive modeling, and classification algorithms using Python.',
+      title: 'Hospital Dashboard – Niramaya',
+      description: 'Built a fully responsive hospital management dashboard during internship using React.js, Tailwind CSS, and API integration for real-time data',
       image: 'https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy'],
+      tech: [],
       github: 'https://github.com',
       demo: 'https://example.com',
       gradient: 'from-emerald-500 to-teal-500',
@@ -53,16 +53,16 @@ const Projects = () => {
       gradient: 'from-orange-500 to-red-500',
       status: 'completed'
     },
-    {
-      title: 'Web Development Projects',
-      description: 'Various web applications including responsive designs, interactive features, and modern UI/UX implementations.',
-      image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
-      gradient: 'from-violet-500 to-purple-500',
-      status: 'ongoing'
-    }
+    // {
+    //   title: 'Web Development Projects',
+    //   description: 'Various web applications including responsive designs, interactive features, and modern UI/UX implementations.',
+    //   image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=800',
+    //  // tech: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
+    //   github: 'https://github.com',
+    //   demo: 'https://example.com',
+    //   gradient: 'from-violet-500 to-purple-500',
+    //   status: 'ongoing'
+    // }
   ];
 
   return (

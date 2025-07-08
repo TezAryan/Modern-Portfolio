@@ -5,9 +5,9 @@ const Experience = () => {
   const experiences = [
     {
       title: 'Bachelor of Computer Science',
-      company: 'University (Current Student)',
+      company: 'SRM University',
       location: 'Chennai, India',
-      period: '2021 - Present',
+      period: '2023 - 2027',
       description: [
         'Currently pursuing Bachelor\'s degree in Computer Science and Engineering',
         'Relevant coursework: Data Structures, Algorithms, Database Management, Software Engineering',
@@ -16,41 +16,41 @@ const Experience = () => {
       ]
     },
     {
-      title: 'Full Stack Web Developer',
-      company: 'Freelance Projects',
+      title: 'Web Developer Intern',
+      company: ' At Niramaya',
       location: 'Chennai, India',
-      period: '2023 - Present',
+      period: '2025 - Present',
       description: [
-        'Developed complete e-commerce websites with payment integration and user management',
-        'Created responsive web applications using modern frameworks and libraries',
-        'Implemented database solutions and API integrations for various client projects',
-        'Managed project timelines and client communications effectively'
+        'Worked on the Hospital Dashboard project to streamline medical data access and improve UI/UX.',
+        'Developed responsive frontend components using React.js, integrating patient data visualization and analytics.',
+        'Collaborated with the backend team to ensure seamless API integration and real-time updates',
+        
       ]
     },
     {
-      title: 'Software Development Projects',
-      company: 'Academic & Personal',
+      title: 'Technical Team Member ',
+      company: 'at NWC association',
       location: 'Chennai, India',
-      period: '2022 - Present',
+      period: '2024 - Present',
       description: [
-        'Built comprehensive management systems using Java and database technologies',
-        'Developed machine learning models for data analysis and prediction tasks',
-        'Created desktop applications with user-friendly interfaces using Swing',
-        'Gained hands-on experience with version control, testing, and deployment'
+        'Contributed to the development and design of technical projects and college-level events.',
+        'Assisted in building and managing the front-end of club websites and portals ',
+        'Supported workshops and tech sessions focused on web development and programming tools',
+        
       ]
     },
-    {
-      title: 'Technical Skills Development',
-      company: 'Self-Learning & Practice',
-      location: 'Chennai, India',
-      period: '2021 - Present',
-      description: [
-        'Continuously learning new technologies through online courses and tutorials',
-        'Practicing problem-solving through coding challenges and competitive programming',
-        'Building personal projects to apply theoretical knowledge in practical scenarios',
-        'Staying updated with latest trends in web development and machine learning'
-      ]
-    }
+    // {
+    //   title: 'Technical Skills Development',
+    //   company: 'Self-Learning & Practice',
+    //   location: 'Chennai, India',
+    //   period: '2021 - Present',
+    //   description: [
+    //     'Continuously learning new technologies through online courses and tutorials',
+    //     'Practicing problem-solving through coding challenges and competitive programming',
+    //     'Building personal projects to apply theoretical knowledge in practical scenarios',
+    //     'Staying updated with latest trends in web development and machine learning'
+    //   ]
+    // }
   ];
 
   return (
