@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Code, Briefcase, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,67 +14,81 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home', icon: Home },
-    { name: 'About', href: '#about', icon: User },
-    { name: 'Skills', href: '#skills', icon: Code },
-    { name: 'Projects', href: '#projects', icon: Briefcase },
-    { name: 'Contact', href: '#contact', icon: Mail },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-gray-900/95 backdrop-blur-xl shadow-2xl border-b border-purple-500/20' : 'bg-transparent'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Colorful Animated Logo */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-lg blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-            <div className="relative text-2xl font-bold bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-x">
-              
-            </div>
-          </div>
-          
+    <header
+      className={`fixed w-full z-50 transition-all duration-500 ${
+        isScrolled
+          ? 'glass-overlay'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-[1440px] mx-auto px-5 sm:px-6 lg:px-16">
+        <div className="flex justify-between items-center py-5">
+          {/* Logo */}
+          <a href="#home" className="group relative">
+            <span className="font-outfit text-xl font-light tracking-tight text-[#F5F5F7] group-hover:text-gold transition-colors duration-300">
+              Tez<span className="text-gold font-normal">.</span>
+            </span>
+          </a>
+
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="relative text-gray-300 hover:text-white transition-all duration-300 flex items-center space-x-1 group"
+                className="relative font-jakarta text-[13px] font-medium tracking-[0.02em] text-[#A1A1AA] hover:text-[#F5F5F7] transition-colors duration-300 group"
               >
-                <div className="absolute -inset-2 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 blur-sm"></div>
-                <item.icon size={16} className="relative z-10 group-hover:text-pink-400 transition-colors duration-300" />
-                <span className="relative z-10">{item.name}</span>
+                {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold group-hover:w-full transition-all duration-300" />
               </a>
             ))}
+            <a
+              href="#contact"
+              className="btn-champagne px-5 py-2 rounded-lg text-[13px] tracking-[0.02em]"
+            >
+              Get In Touch
+            </a>
           </nav>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 rounded-md text-gray-300 hover:text-pink-400 transition-colors relative group"
+            className="md:hidden p-2 text-[#A1A1AA] hover:text-gold transition-colors duration-300"
           >
-            <div className="absolute -inset-2 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 blur-sm"></div>
-            {isMenuOpen ? <X size={24} className="relative z-10" /> : <Menu size={24} className="relative z-10" />}
+            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden pb-4 animate-slide-down">
-            <div className="flex flex-col space-y-2 bg-gray-800/50 backdrop-blur-xl rounded-lg p-4 border border-purple-500/20">
+          <nav className="md:hidden pb-6 animate-slide-down">
+            <div className="flex flex-col gap-1 glass-surface rounded-xl p-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-300 hover:text-pink-400 transition-colors duration-300 flex items-center space-x-2 py-2 px-3 rounded-lg hover:bg-purple-500/10"
+                  className="font-jakarta text-sm text-[#A1A1AA] hover:text-gold transition-colors duration-300 py-2.5 px-3 rounded-lg hover:bg-[rgba(212,175,55,0.06)]"
                 >
-                  <item.icon size={16} />
-                  <span>{item.name}</span>
+                  {item.name}
                 </a>
               ))}
+              <a
+                href="#contact"
+                onClick={() => setIsMenuOpen(false)}
+                className="btn-champagne mt-2 px-5 py-2.5 rounded-lg text-sm text-center"
+              >
+                Get In Touch
+              </a>
             </div>
           </nav>
         )}
