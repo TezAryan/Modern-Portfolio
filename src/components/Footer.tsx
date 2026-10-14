@@ -1,4 +1,4 @@
-import { Heart, Code } from 'lucide-react';
+import { Heart, Code, Github, Linkedin, Code2 } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -14,6 +14,36 @@ const Footer = () => {
               A passionate Computer Science student creating innovative digital
               solutions.
             </p>
+            {/* Social icons */}
+            <div className="flex gap-2.5 pt-2">
+              <a
+                href="https://github.com/TezAryan"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                className="p-2 rounded-lg bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-[#52525B] hover:text-gold hover:border-[rgba(212,175,55,0.25)] transition-all duration-300"
+              >
+                <Github size={15} strokeWidth={1.5} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/tez-aryan-saraf-48131a371"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LinkedIn"
+                className="p-2 rounded-lg bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-[#52525B] hover:text-champagne hover:border-[rgba(212,175,55,0.25)] transition-all duration-300"
+              >
+                <Linkedin size={15} strokeWidth={1.5} />
+              </a>
+              <a
+                href="https://leetcode.com/u/tez_aryan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="LeetCode"
+                className="p-2 rounded-lg bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] text-[#52525B] hover:text-[#FFA116] hover:border-[rgba(212,175,55,0.25)] transition-all duration-300"
+              >
+                <Code2 size={15} strokeWidth={1.5} />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -22,16 +52,18 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2">
-              {['Home', 'About', 'Projects', 'Contact'].map((link) => (
-                <li key={link}>
-                  <a
-                    href={`#${link.toLowerCase()}`}
-                    className="font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              {['Home', 'About', 'Skills', 'Projects', 'Experience', 'Contact'].map(
+                (link) => (
+                  <li key={link}>
+                    <a
+                      href={`#${link.toLowerCase()}`}
+                      className="font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
@@ -41,12 +73,26 @@ const Footer = () => {
               Get In Touch
             </h4>
             <div className="space-y-2">
-              <p className="font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300">
+              <a
+                href="mailto:tezaryan2004@gmail.com"
+                className="block font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300"
+              >
                 tezaryan2004@gmail.com
-              </p>
-              <p className="font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300">
+              </a>
+              <a
+                href="tel:+918116030786"
+                className="block font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300"
+              >
                 +91 8116030786
-              </p>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1rIrgsF1C8wv9g4DCVy_ySX1qlYZ0RKRi/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block font-outfit font-light text-[13px] text-[#52525B] hover:text-gold transition-colors duration-300"
+              >
+                View Resume ↗
+              </a>
             </div>
           </div>
         </div>
@@ -58,7 +104,11 @@ const Footer = () => {
               <span>Made with</span>
               <Heart size={13} className="text-gold" strokeWidth={1.5} />
               <span>and</span>
-              <Code size={13} className="text-champagne-dim" strokeWidth={1.5} />
+              <Code
+                size={13}
+                className="text-champagne-dim"
+                strokeWidth={1.5}
+              />
               <span>by</span>
               <span className="text-champagne-dim font-normal">Tez Aryan</span>
             </div>

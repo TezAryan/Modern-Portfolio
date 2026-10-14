@@ -1,5 +1,14 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Github,
+  Linkedin,
+  Code2,
+  FileText,
+} from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,9 +54,26 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, name: 'GitHub', href: 'https://github.com' },
-    { icon: Linkedin, name: 'LinkedIn', href: 'https://linkedin.com' },
-    { icon: Twitter, name: 'Twitter', href: 'https://twitter.com' },
+    {
+      icon: Github,
+      name: 'GitHub',
+      href: 'https://github.com/TezAryan',
+    },
+    {
+      icon: Linkedin,
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/tez-aryan-saraf-48131a371',
+    },
+    {
+      icon: Code2,
+      name: 'LeetCode',
+      href: 'https://leetcode.com/u/tez_aryan/',
+    },
+    {
+      icon: FileText,
+      name: 'Resume',
+      href: 'https://drive.google.com/file/d/1rIrgsF1C8wv9g4DCVy_ySX1qlYZ0RKRi/view?usp=sharing',
+    },
   ];
 
   return (
@@ -76,8 +102,8 @@ const Contact = () => {
               </h3>
               <p className="font-outfit font-light text-[15px] leading-[24px] text-[#A1A1AA]">
                 Whether you have a question, want to discuss a project, or just
-                want to say hi, I'd love to hear from you. Send me a message
-                and I'll respond as soon as possible.
+                want to say hi, I'd love to hear from you. Send me a message and
+                I'll respond as soon as possible.
               </p>
             </div>
 
@@ -113,7 +139,7 @@ const Contact = () => {
             {/* Social links */}
             <div className="glass-surface rounded-xl p-6">
               <h4 className="font-jakarta text-[10px] font-semibold tracking-[0.14em] uppercase text-champagne-dim mb-4">
-                Follow Me
+                Connect With Me
               </h4>
               <div className="flex gap-3">
                 {socialLinks.map((social, index) => (
@@ -122,6 +148,7 @@ const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title={social.name}
                     className="p-3 rounded-lg bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.06)] text-[#52525B] hover:text-gold hover:border-[rgba(212,175,55,0.3)] transition-all duration-300 hover:scale-110"
                   >
                     <social.icon size={18} strokeWidth={1.5} />
